@@ -1,0 +1,82 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  color: white;
+}
+
+#root {
+  height: inherit;
+}
+
+.app {
+  height: inherit;
+}
+
+.intro {
+  background: black;
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+
+.pro {
+  background: brown;
+  height: 100%;
+}
+
+.textContainer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 30% auto;
+}
+
+.title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+path {
+  color: white;
+  fill: white;
+  width: 50%;
+  height: 50%;
+}
+
+svg {
+  width: auto;
+  height: 50%;
+}
+
+g {
+  position: absolute;
+  top: 100px;
+}
+
+.scaling-svg-container {
+  position: relative;
+  height: 0;
+  width: 800px;
+  padding: 0;
+  padding-bottom: 50px;
+  /* override this inline for aspect ratio other than square */
+}
+
+.scaling-svg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+/*# sourceMappingURL=main.css.map */

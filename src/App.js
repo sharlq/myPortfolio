@@ -1,9 +1,10 @@
-
-
+import Intro from './components/intro'
+import My from "./components/Myprojects"
 function App() {
   return (
-    <div className="App">
-     
+    <div className="app">
+    <Intro />
+    <My />
     </div>
   );
 }
