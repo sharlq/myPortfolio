@@ -1,51 +1,51 @@
-.intro{
 
-    background: black;
-    height: 80%;
-    width: 100%;
-    position:absolute ;
-}
-.pro{
-    background: brown;
-    height: 100%;
-}
-.textContainer{
-    width: fit-content;
-    margin: 30% auto ;
+$width : 300px;
+
+.intro{
+    margin: auto;
+    height: 50vh;
+    border-bottom:1px solid rgba(0, 0, 0, .3) ;
+    width: 1200px;
 }
 .title{
     width: fit-content;
     margin: auto;
 }
+
+
+
 path{
-    color: white;
-    fill: white;
-    width: 50%;
-    height: 50%;
+    color: black;
+    stroke: rgb(0, 0, 0);
+    stroke-width: 1px;
+  
 }
-svg{
-   width: auto;
-   height: 50%;
-   
-}
-g{
-    position: absolute;
-    top: 100px;
-    
+
+.textContainer{
+    position: relative;
+    width: $width;
+    height: 100px;
+    margin: auto;
+    margin-top:20vh ;
 }
 
 .scaling-svg-container {
-    position: relative; 
-    height: 0; 
-    width: 800px; 
+    position: absolute;
+    width: $width;
     padding: 0;
-    padding-bottom: 50px; // you can change its size by chaingin the padding 
-    /* override this inline for aspect ratio other than square */
+    padding-bottom: 40px;
    }
    .scaling-svg {
-    position: absolute; 
-    height: 100%; 
-    width: 100%; 
-    left: 0; 
-    top: 0;
+    position: absolute;
+    height: 100%;
+    width: -moz-fit-content;
+    width: $width;
+   }
+   .scaling-svg2 {
+    position: absolute;
+    height: 100%;
+    width: -moz-fit-content;
+    width: $width;
+    margin-top: 5vh;
+    margin-left: 5px;
    }
