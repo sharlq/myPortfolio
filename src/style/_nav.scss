@@ -1,0 +1,24 @@
+.navBar{
+    width: 1200px;
+
+display: flex;
+justify-content: space-between;
+margin: auto;
+margin-top: 40px;
+&-list{
+    display: flex;
+    justify-content: space-between;
+    width:600px;
+    align-items: flex-end;
+    font-weight: 600;
+    &_name{
+        font-size: 24px;
+        color: black;
+    }
+}
+
+}
+
+a:hover{
+    color:black;
+}
