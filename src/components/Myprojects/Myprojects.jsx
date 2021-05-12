@@ -15,21 +15,25 @@ const Myprojects = () => {
         <div className="myProjects">
             <h4 className="myProjects-title" >My projects</h4>
             <div className="myProjects-projectsGrid">
-            <div>projects</div>
+            <div>
+              <p className="myProjects-projectsGrid_title">
+                Projects
+              </p>
+              <p className="myProjects-projectsGrid_description">
+                Here is a group of my projects to show my abilites and what iam capable of doing 
+              </p>
+            </div>
             <Card>
                     <div className="card-title">{card.title}</div>
-                    <div className="card-body">{card.description}</div>
-                    <Image ratio={card.imageRatio} src={card.image} />
+                    <div className="card-body">{card.description}</div>  
             </Card>
-            <Card>
+            <Card cardStyle={{height:'22vh',width:'22vw'}} >
                     <div className="card-title">{card.title}</div>
-                    <div className="card-body">{card.description}</div>
-                    <Image ratio={card.imageRatio} src={card.image} />
+                    <div className="card-body">{card.description}</div>   
             </Card>
-            <Card>
+            <Card cardStyle={{height:'25vh',width:'25vw'}}>
                     <div className="card-title">{card.title}</div>
                     <div className="card-body">{card.description}</div>
-                    <Image ratio={card.imageRatio} src={card.image} />
             </Card>
            
             </div>
