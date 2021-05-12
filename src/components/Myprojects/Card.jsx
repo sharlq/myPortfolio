@@ -5,30 +5,7 @@ import { useSpring, animated } from 'react-spring';
 
 
 
-function Card({ children }) {
-    const cards = [
-        {
-          title: 'Build faster ⚡️',
-          description:
-            'Create a React web app in the fraction of the time using our library of themes and building blocks. We have everything from navbars and content grids to authentication flows and commenting systems. New blocks are added every week.',
-          image: 'https://6jlvz1j5q3.csb.app/undraw_collection.svg',
-          imageRatio: 784 / 1016
-        },
-        {
-          title: 'Tweak anything 👩‍🎨',
-          description:
-            'Built with developers in mind. Change element structure, edit CSS, create components, add props and state. We give you access to the underlying React code so you can do what you need right in our tool.',
-          image: 'https://6jlvz1j5q3.csb.app/undraw_upload.svg',
-          imageRatio: 839 / 1133
-        },
-        {
-          title: 'Export your code 🚀',
-          description:
-            "Export your project as a high-quality React codebase. We're lazer focused on helping you build and iterate quickly, but expect that you'll eventually want to export and wrap things up in your favorite code editor.",
-          image: 'https://6jlvz1j5q3.csb.app/undraw_static_assets.svg',
-          imageRatio: 730 / 1030
-        }
-      ];
+function Card({ children,cardStyle={}}) {
     // We add this ref to card element and use in onMouseMove event ...
     // ... to get element's offset and dimensions.
     const ref = useRef();
@@ -53,6 +30,7 @@ function Card({ children }) {
       <animated.div
         ref={ref}
         className="card"
+        
         onMouseEnter={() => setHovered(true)}
         onMouseMove={({ clientX, clientY }) => {
           // Get mouse x position within card
@@ -83,7 +61,7 @@ function Card({ children }) {
           // Set xys back to original
           setAnimatedProps({ xys: [0, 0, 1] });
         }}
-        style={{
+        style={{...{
           // If hovered we want it to overlap other cards when it scales up
           zIndex: isHovered ? 2 : 1,
           // Interpolate function to handle css changes
@@ -91,7 +69,7 @@ function Card({ children }) {
             (x, y, s) =>
               `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
           )
-        }}
+        },...cardStyle}}
       >
         {children}
       </animated.div>
