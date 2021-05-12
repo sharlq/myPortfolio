@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(179deg, #f0f8ff, #1c61fd);
+  background: linear-gradient(137deg, #f0f8ff, #cfddff);
 }
 
 body {
@@ -118,7 +118,7 @@ a:hover {
 .myProjects-title {
   margin-top: 5vh;
   margin-left: 5vw;
-  color: white;
+  color: black;
   font-size: 16pt;
 }
 
@@ -139,15 +139,15 @@ a:hover {
 }
 
 .myProjects-projectsGrid_title {
-  color: white;
-  font-size: 24px;
+  color: black;
+  font-size: 48px;
   font-weight: 800;
 }
 
 .myProjects-projectsGrid_description {
   width: 20vw;
-  color: white;
-  font-size: 18px;
+  color: black;
+  font-size: 28px;
   font-weight: 400;
   margin-top: 10px;
 }
@@ -220,17 +220,15 @@ a:hover {
 }
 
 .card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 10px;
   padding: 40px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(96deg, #0053FF, #6997f7);
+  -webkit-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.6);
   -webkit-transition: -webkit-box-shadow 0.5s;
   transition: -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s;
@@ -242,11 +240,15 @@ a:hover {
 }
 
 .card-title {
+  cursor: default;
+  color: white !important;
   font-size: 22px;
   font-weight: 600;
 }
 
 .card-body {
+  cursor: default;
+  color: white !important;
   margin-top: 27px;
   margin-bottom: 27px;
   line-height: 1.5;
@@ -259,26 +261,58 @@ a:hover {
   }
 }
 
-.image-container {
-  margin-top: auto;
-  padding-top: 27px;
-  padding-bottom: 18px;
+.card-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 5fr 1fr;
+      grid-template-rows: 2fr 5fr 1fr;
+  height: 200px;
+}
+
+.card-tail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.card-tail a {
+  color: white !important;
 }
 
 @media screen and (min-width: 576px) {
-  .image-container {
-    padding-bottom: 30px;
+  .card-tail {
+    font-size: 18px;
   }
+}
+
+.card-tail a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.image-container {
+  margin-top: auto;
+  padding-top: 27px;
+  border-radius: 5px;
 }
 
 .image-container img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .image-inner-container {
+  color: black;
+  -webkit-box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   width: 100%;
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 350px;
 }
 
 .ratio {
