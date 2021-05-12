@@ -1,3 +1,9 @@
 @import "config";
 @import "Intro";
 @import 'nav';
+@import 'MyProjects';
+@import 'card';
+.app{
+    width: 1200px;
+    margin: auto;
+}

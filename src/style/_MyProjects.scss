@@ -1,0 +1,15 @@
+.myProjects{
+    height: 80vh;
+    &-title{
+        margin-top: 5vh;
+        margin-left: 5vw;
+        color: black;
+        font-size: 16pt;
+    }
+    &-projectsGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+}
