@@ -1,4 +1,4 @@
-function Image({ ratio, src }) {
+function Image({ ratio, src ,link}) {
     return (
       <div className="image-container">
         <div className="image-inner-container">
@@ -9,7 +9,9 @@ function Image({ ratio, src }) {
             }}
           >
             <div className="ratio-inner">
-              <img src={src} />
+              <a href={link}>
+                 <img src={src} />
+              </a>
             </div>
           </div>
         </div>
