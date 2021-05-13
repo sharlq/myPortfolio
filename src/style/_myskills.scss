@@ -13,22 +13,48 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
-    .programmingSkills{
+    .skills{
         @extend .card;
         display: flex;
         flex-direction: column;
+        width: 25vw;
+        height: max-content;
+        background: linear-gradient(
+            96deg
+            , #0053FF, #427eff);
         &-title{
             color:white ;
             width: fit-content;
             margin: 0 auto 0 auto ;
-            font-size: 1.3vw;
+            font-size: 1.2vw;
             font-weight: 600;
+        }
+        &-secondaryTitle{
+            color:white ;
+            width: fit-content;
+            margin: 2vh auto 0  0;
+            font-size: 1vw;
+            font-weight: 600;
+        }
+        &-list{
+            
+            font-size: 1vw;
+            list-style-type: none;
+            li{
+                font-size: .9vw;
+                color:white ;
+                text-indent: -5px;
+                margin-top: 5px;
+            }
+            li:before{
+                font-weight: 800;
+                font-size: 20px;
+                content:'- ';
+                text-indent: -5px;
+            }
         }
     }
 
-    .otherSkills{
-        @extend .card;
-        color: white;
-    }
+   
     }
 }
