@@ -220,7 +220,7 @@ a:hover {
   }
 }
 
-.card, .mySkills-grid .skills {
+.card, .mySkills-grid .skills, .toLearn-card {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -364,10 +364,10 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 25vw;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: auto;
   background: linear-gradient(96deg, #0053FF, #427eff);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .mySkills-grid .skills-title {
@@ -403,6 +403,58 @@ a:hover {
 }
 
 .mySkills-grid .skills-list li:before {
+  font-weight: 800;
+  font-size: 20px;
+  content: '- ';
+  text-indent: -5px;
+}
+
+.toLearn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.toLearn-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50vw;
+  background: linear-gradient(96deg, #0053FF, #427eff);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.toLearn-card_title {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 0 auto;
+  font-size: 1.2vw;
+  font-weight: 600;
+}
+
+.toLearn-card_list {
+  font-size: 1vw;
+  list-style-type: none;
+}
+
+.toLearn-card_list li {
+  font-size: .9vw;
+  color: white;
+  text-indent: -5px;
+  margin-top: 5px;
+}
+
+.toLearn-card_list li:before {
   font-weight: 800;
   font-size: 20px;
   content: '- ';
