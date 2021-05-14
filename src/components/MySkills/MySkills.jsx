@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useRef} from 'react'
 
 const MySkills = () => {
+    const cardRef = useRef({})
+
     return (
-        <div className="mySkills">
+        <>
+        <div className="mySkills" >
             <h1 className="mySkills-title">My Skills</h1>
             <div className="mySkills-grid">
             <div className="skills">
@@ -29,29 +32,42 @@ const MySkills = () => {
             </div>
 
 
-            <div className="skills">
+            <div className="skills" >
             <h1 className="skills-title">Soft Skills</h1>
                 <div>
                     <ul className="skills-list">
-                        <li>Able to consume knowladge, new information and adapt to new technologies fast </li>
-                        <li>Experience with REACT</li>
-                        <li>Knowledge of webStructure and browser performance</li>
-                        <li>Familiarity with software  version control system Git,Github</li>
-                        <li>Familiarity with the whole web stack</li>
-                        <li>knowladge of NodeJS and express</li>
-                        <li>experiance with SASS</li>
-                        <li>Knowledge of bundling tools webpack,roll up and parcel</li>
+                        <li>The ablility to consume knowledge, new information and adapt to new technologies fast </li>
+                        <li>Can utilise wed services and interact with their guide lines and API reference</li>
+                        <li>self learning</li>
+                        <li>Team work and communication skills</li>
+                        <li>Working under pressure and optimizing performance to meet deadlines</li>
+                        <li>Problem-solving and creating innovative solutions</li>
+                        <li>Presentation skills and public speaking</li>
                     </ul>
                 <h1 className="skills-title" style={{marginTop:"3vh",marginBottom:"2vh"}}>Other technical Skills</h1>
                     <ul className="skills-list" >
-                        <li>knowladge of python</li>
-                        <li>OOP in JavaScrpt and python</li>
-                        <li>Knowledge of OpenCV in python</li>
+                        <li>knowladge of Photoshope , Illustrator and Adobe XD</li>
+                        <li>Experience with microcontrollers such as Raspberry Pi and Arduino</li>
+                        <li>Experiance with 3D design programms AutoCAD and SolidWorks</li>
+                        <li>Experience with smart home devices and industrial automation</li>
                     </ul>
                 </div>
             </div>
             </div>
         </div>
+        <div className="toLearn">
+            <div className="toLearn-card">
+                <h1 className="toLearn-card_title">Things Iam planning to learn</h1>
+                <ul className="toLearn-card_list" >
+                        <li>TypeScript</li>
+                        <li>React Native</li>
+                        <li>to master firebase</li>
+                        <li>to learn Fullstack development</li>
+                        <li>of course, i will prioritize anything the company requires or any technology it wants to adopt</li>
+                </ul>
+            </div>
+        </div>
+        </>
     )
 }
 

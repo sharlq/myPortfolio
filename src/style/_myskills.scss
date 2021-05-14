@@ -18,10 +18,11 @@
         display: flex;
         flex-direction: column;
         width: 25vw;
-        height: max-content;
+        height: auto;
         background: linear-gradient(
             96deg
             , #0053FF, #427eff);
+        box-shadow: none;
         &-title{
             color:white ;
             width: fit-content;
@@ -56,5 +57,46 @@
     }
 
    
+    }
+}
+.toLearn{
+    
+    display: flex;
+    justify-content: center;
+    &-card{
+    @extend .card;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+   
+    background: linear-gradient(
+        96deg
+        , #0053FF, #427eff);
+    box-shadow: none;
+
+    &_title{
+        color:white ;
+        width: fit-content;
+        margin: 0 auto 0 auto ;
+        font-size: 1.2vw;
+        font-weight: 600;
+    }
+    &_list{
+            
+        font-size: 1vw;
+        list-style-type: none;
+        li{
+            font-size: .9vw;
+            color:white ;
+            text-indent: -5px;
+            margin-top: 5px;
+        }
+        li:before{
+            font-weight: 800;
+            font-size: 20px;
+            content:'- ';
+            text-indent: -5px;
+        }
+    }
     }
 }
