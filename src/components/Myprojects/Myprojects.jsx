@@ -6,7 +6,6 @@ const Myprojects = () => {
  
     return (
         <div className="myProjects">
-            <h4 className="myProjects-title" >My projects</h4>
             <div className="myProjects-projectsGrid">
             <div>
               <p className="myProjects-projectsGrid_title">

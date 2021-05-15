@@ -114,13 +114,7 @@ a:hover {
 .myProjects {
   height: 80vh;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-
-.myProjects-title {
-  margin-top: 5vh;
-  margin-left: 5vw;
-  color: black;
-  font-size: 16pt;
+  margin-top: 7vh;
 }
 
 .myProjects-projectsGrid {
@@ -227,7 +221,7 @@ a:hover {
       grid-template-columns: 1fr 1fr;
   gap: 10px;
   padding: 40px;
-  background: linear-gradient(96deg, #0053FF, #6997f7);
+  background: linear-gradient(96deg, #003db6, #4f70b8);
   -webkit-box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.6);
   -webkit-transition: -webkit-box-shadow 0.5s;
@@ -464,7 +458,6 @@ a:hover {
 .aboutMe {
   margin-top: 10vh;
   width: 100%;
-  height: 60vh;
   background: #6937ff;
   border-top-left-radius: 100px;
 }
@@ -484,6 +477,61 @@ a:hover {
   padding-top: 2vh;
   font-size: 24px;
   color: white;
+}
+
+.icon {
+  font-size: 3vw !important;
+}
+
+path {
+  color: white !important;
+}
+
+.contacts {
+  margin: auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5vh;
+}
+
+.email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+p {
+  margin-left: 1vw;
+  color: white;
+  font-size: 1vw;
+}
+
+.contactMe {
+  background: #221e41;
+  width: 98%;
+  border-top-right-radius: 100px;
+  height: 40vh;
+  margin-top: 10vh;
+}
+
+.contactMe-content {
+  width: 1200px;
+  margin: auto;
+}
+
+.contactMe-content_title {
+  padding-top: 7.5vh;
+  font-size: 48px;
+  color: white;
+  margin: auto;
 }
 
 .app {
