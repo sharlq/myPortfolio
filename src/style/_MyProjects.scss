@@ -1,12 +1,7 @@
 .myProjects{
     height: 80vh;
     border-bottom:1px solid rgba(0, 0, 0, .3);
-    &-title{
-        margin-top: 5vh;
-        margin-left: 5vw;
-        color: black;
-        font-size: 16pt;
-    }
+   margin-top: 7vh;
     &-projectsGrid{
         display: grid;
         grid-template-columns: 1fr 1fr;

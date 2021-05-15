@@ -2,7 +2,7 @@ import Intro from './components/intro/intro'
 import MyProjects from "./components/Myprojects/Myprojects"
 import Nav from "./components/NavBar"
 import MySkills from './components/MySkills/MySkills'
-import AboutMe from './components/AboutMe/AboutMe'
+import Footer from './components/Footer/Footer'
 function App() {
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
     <MyProjects />
     <MySkills />
     </div>
-    <AboutMe />
+    <Footer />
     </>
   );
 }

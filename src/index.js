@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import "./style/main.css"
 import App from './App';
 import '@fontsource/roboto';
-import '@fortawesome/fontawesome-free';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
