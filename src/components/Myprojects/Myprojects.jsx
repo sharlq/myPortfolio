@@ -2,6 +2,7 @@ import React from 'react'
 import Card from './Card'
 import Image from './Image'
 import card from './cardsData'
+import CardContent from './CardContent'
 const Myprojects = () => {
  
     return (
@@ -15,56 +16,67 @@ const Myprojects = () => {
                 Here is a group of my projects to show my abilites and what iam capable of doing 
               </p>
             </div>
-            <Card cardStyle={{height:'200px',width:'400px'}}>
-                    <div className="card-info">
-                    <div className="card-title">{card[0].title}</div>
-                    <div className="card-body"></div>
-                    <div className="card-tail">
-                    <a href={card[0].github}>Github</a>
-                    <a href={card[0].preview}>Preview</a>
-                    </div>
-                    </div>
-                    <div>
-                      <Image
-                       src={card[0].image}
-                       ratio={card[0].imageRatio} 
-                       link={card[0].preview}/>
-                    </div>
+            <Card cardStyle={{height:'23.3vh',width:'23.3vw'}}>
+              <CardContent
+               cardTitle={card[0].title}
+               github={card[0].github}
+               preview={card[0].preview}
+               cardImage={card[0].image}
+               cardImageRatio={card[0].imageRatio} />
             </Card>
             <Card cardStyle={{height:'22vh',width:'22vw'}} >
-            <div className="card-info">
-                    <div className="card-title">{card[1].title}</div>
-                    <div className="card-body">{card[1].description}</div>
-                    <div className="card-tail">
-                    <a href={card[1].github}>Github</a>
-                    <a href={card[1].preview}>Preview</a>
-                    </div>
-                    </div>
-                    <div>
-                      <Image 
-                      src={card[1].image} 
-                      ratio={card[1].imageRatio} 
-                      link={card[1].preview}/>
-                    </div>  
+            <CardContent
+               cardTitle={card[1].title}
+               cardDescription={card[1].description}
+               github={card[1].github}
+               preview={card[1].preview}
+               cardImage={card[1].image}
+               cardImageRatio={card[1].imageRatio} />
             </Card>
             <Card cardStyle={{height:'25vh',width:'25vw'}}>
-            <div className="card-info">
-                    <div className="card-title">{card[2].title}</div>
-                    <div className="card-body">{card[2].description}</div>
-                    <div className="card-tail">
-                    <a href={card[2].github}>Github</a>
-                    <a href={card[2].preview}>Preview</a>
-                    </div>
-                    </div>
-                    <div>
-                      <Image 
-                      src={card[2].image} 
-                      ratio={card[2].imageRatio} 
-                      link={card[2].preview}/>
-                    </div>
+            <CardContent
+               cardTitle={card[2].title}
+               cardDescription={card[2].description}
+               github={card[2].github}
+               preview={card[2].preview}
+               cardImage={card[2].image}
+               cardImageRatio={card[2].imageRatio} />
             </Card>
-           
+            <Card cardStyle={{height:'22vh',width:'22vw'}}>
+            <CardContent
+               cardTitle={card[4].title}
+               cardDescription={card[4].description}
+               github={card[4].github}
+               preview={card[4].preview}
+               cardImage={card[4].image}
+               cardImageRatio={card[4].imageRatio} />
+            </Card>
+            <p className="myProjects-projectsGrid_description">
+                this group of  projects to give an idea about my level as a web developer 
+              </p>
+            <Card cardStyle={{height:'23.5vh',width:'23.5vw',marginRight:"1.5vh"}}>
+            <CardContent
+               cardTitle={card[5].title}
+               cardDescription={card[5].description}
+               github={card[5].github}
+               preview={card[5].preview}
+               cardImage={card[5].image}
+               cardImageRatio={card[5].imageRatio} />
+            </Card>
+            <Card cardStyle={{height:'25vh',width:'25vw',marginLeft:"1.5vh"}}>
+            <CardContent
+               cardTitle={card[3].title}
+               cardDescription={card[3].description}
+               github={card[3].github}
+               preview={card[3].preview}
+               cardImage={card[3].image}
+               cardImageRatio={card[3].imageRatio} />
+            </Card>
+            
             </div>
+
+
+           
         </div>
     )
 }
