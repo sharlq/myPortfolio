@@ -57,19 +57,30 @@
   }
   
   .card-title {
-    cursor: default ;
+    cursor: default;
     color: white !important;
-    font-size: 22px;
+    font-size: 1.2vw;
     font-weight: 600;
+
+    // cursor: default ;
+    // color: white !important;
+    // font-size: 22px;
+    // font-weight: 600;
   }
   
   .card-body {
-    cursor: default ;
+    cursor: default;
     color: white !important;
     margin-top: 27px;
     margin-bottom: 27px;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: .9vw !important;
+    // cursor: default ;
+    // color: white !important;
+    // margin-top: 27px;
+    // margin-bottom: 27px;
+    // line-height: 1.5;
+    // font-size: 16px;
     
     @media screen and (min-width: 576px) {
       font-size: 18px;
@@ -78,8 +89,8 @@
   .card-info{
     
     display: grid;
-    grid-template-rows:2fr 5fr 1fr ;
-    height: 200px;
+    grid-template-rows:1fr 5fr 1fr ;
+    height: inherit;
   }
   .card-tail {
     a{
@@ -88,8 +99,16 @@
     display: flex;
     margin-top: 27px;
     margin-bottom: 27px;
+    position: absolute;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 1.1vw;
+    bottom: 0vh;
+    left: 2vw;
+    // display: flex;
+    // margin-top: 27px;
+    // margin-bottom: 27px;
+    // line-height: 1.5;
+    // font-size: 16px;
     @media screen and (min-width: 576px) {
       font-size: 18px;
     }

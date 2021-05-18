@@ -25,6 +25,36 @@ const  cards =[
       imageRatio:  1080/1920,
       preview:'https://portfolio-ecommercejs.netlify.app/',
       github:'https://github.com/sharlq/React_Ecommerce'
+    }
+    ,
+    {
+      title: 'Components library',
+      description:
+        'crated it to not have to recreate compnents everytime i create a project  to use it: npm i sharlq-comp-lib',
+      image: 'https://www.mediafire.com/convkey/4f36/1c5k6wxote6xh6czg.jpg',
+      imageRatio:  1080/1920,
+      preview:'https://www.npmjs.com/package/sharlq-comp-lib',
+      github:'https://github.com/sharlq/sharlq-react-component-library'
+    }
+    ,
+    {
+      title: 'User Authentication',
+      description:
+        'crated user Authentication using firebase',
+      image: 'https://www.mediafire.com/convkey/3cf0/6ghz634108vxb0nzg.jpg',
+      imageRatio:  1080/1920,
+      preview:'https://firebase-user-auth.netlify.app/login',
+      github:'https://github.com/sharlq/ReactAuthentication'
+    }
+    ,
+    {
+      title: 'CRUD API with mongodb',
+      description:
+        'its a CRUD API that interact with mongo database you can use postman to test the api',
+      image: 'https://www.mediafire.com/convkey/871e/rup6717l2hwwp9pzg.jpg',
+      imageRatio:  1080/1920,
+      preview:'https://crud-api-with-mongodb.herokuapp.com/users',
+      github:'https://github.com/sharlq/REST_CRUD_API'
     }]
 
 
