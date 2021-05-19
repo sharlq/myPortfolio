@@ -1,7 +1,8 @@
 .mySkills{
-    margin:  auto 0 auto 0;
+    margin:  0 auto 0 auto;
     margin-top: 5vh;
     margin-bottom: 10vh;
+    width: 1200px;
     &-title{
         width: fit-content;
         margin: auto;
@@ -9,10 +10,10 @@
         color: black;
     }
     &-grid{
-        margin-top: 5vh;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
+        margin-top: 5vh;
     .skills{
         @extend .card;
         display: flex;
