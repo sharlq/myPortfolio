@@ -7,7 +7,9 @@ const Intro = () => {
   
     return (
         <div className="intro">
+          
           <Svg />
+         
         </div>
     )
 }

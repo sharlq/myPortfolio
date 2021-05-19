@@ -3,14 +3,16 @@ $width : 300px;
 
 .intro{
     height: 50vh;
-    border-bottom:1px solid rgba(0, 0, 0, .3) ;
 }
 .title{
     width: fit-content;
     margin: auto;
 }
 
-
+.square{
+    background: linear-gradient(137deg, #f0f8ff, #cfddff);
+    border-bottom-right-radius:150px ;
+}
 
 path{
     color: black;

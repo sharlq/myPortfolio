@@ -5,7 +5,7 @@ const MySkills = () => {
 
     return (
         <>
-        <div className="mySkills" >
+        <div id="mySkills" className="mySkills" >
             <h1 className="mySkills-title">My Skills</h1>
             <div className="mySkills-grid">
             <div className="skills">

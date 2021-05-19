@@ -9,7 +9,7 @@ const Svg = () => {
       strokeDasharray:length,
         strokeDashoffset:toggle ? 0 : length,
         delay:200,
-        fill: fillToggle ? "#000000":"#f0f8ff",
+        fill: fillToggle ? "#000000":"#e2ecff",
         config: config.molasses
     })
    

@@ -5,7 +5,9 @@ import { useSpring, animated } from 'react-spring';
 
 
 
-function Card({ children,cardStyle={}}) {
+function Card({ children,cardStyle={},yourClass=""}) {
+
+    const classes = `card ${yourClass}`
     // We add this ref to card element and use in onMouseMove event ...
     // ... to get element's offset and dimensions.
     const ref = useRef();
@@ -29,7 +31,7 @@ function Card({ children,cardStyle={}}) {
     return (
       <animated.div
         ref={ref}
-        className="card"
+        className={classes}
         
         onMouseEnter={() => setHovered(true)}
         onMouseMove={({ clientX, clientY }) => {

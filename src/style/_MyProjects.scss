@@ -1,7 +1,6 @@
 .myProjects{
    
-    border-bottom:1px solid rgba(0, 0, 0, .3);
-    height: 145vh;
+   // height: 145vh;
    margin-top: 7vh;
     &-projectsGrid{
         display: grid;
@@ -10,8 +9,9 @@
         align-items: center;
         justify-items: center;
         height: fit-content;
-        width: 60vw;
+        width: fit-content;
         margin: auto;
+        margin-top: 5vh;
         &_title{
             color: black;
             font-size: 48px;
