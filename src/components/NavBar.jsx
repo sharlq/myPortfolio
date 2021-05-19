@@ -5,12 +5,13 @@ const NavBar = () => {
         <div className="navBar" >
             <div className="navBar-list">
                 <a className="navBar-list_name">Shehab</a>
-                <a>My Projects</a>
-                <a>My Skills</a>
-                <a>About Me</a>
+                <a href="#myProjects">My Projects</a>
+                <a href="#mySkills">My Skills</a>
+                <a href="#aboutMe">About Me</a>
+                <a href="#contactMe">Contact Me</a>
             </div>
-                <a>Contact Me</a>
-            
+                
+                <a className="resume">Resume</a>
         </div>
     )
 }

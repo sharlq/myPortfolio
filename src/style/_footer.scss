@@ -17,9 +17,14 @@
             color: white;
         }
     }
+    p{
+        margin-left: 1vw;
+        color: white;
+        font-size: 22px;
+       }
 }
 .icon{
-    font-size: 3vw !important;
+    font-size: 75px !important;
     
 }
 path{
@@ -36,8 +41,20 @@ margin-top: 5vh;
     display: flex;
     align-items: center;
 }
-p{
- margin-left: 1vw;
- color: white;
- font-size: 1vw;
+.contactMe{
+    background: #221e41;
+    width: 95%;
+    border-top-right-radius: 100px;
+    height: 40vh;
+    margin-top: 10vh;
+    &-content{
+        width:1200px;
+        margin : auto;
+        &_title{
+        padding-top: 7.5vh;
+            font-size: 48px;
+            color: white;
+            margin: auto;}
+    }
+   
 }

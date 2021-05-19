@@ -6,7 +6,7 @@ import CardContent from './CardContent'
 const Myprojects = () => {
  
     return (
-        <div className="myProjects">
+        <div id="myProjects" className="myProjects">
             <div className="myProjects-projectsGrid">
             <div>
               <p className="myProjects-projectsGrid_title">
@@ -51,8 +51,8 @@ const Myprojects = () => {
                cardImage={card[4].image}
                cardImageRatio={card[4].imageRatio} />
             </Card>
-            <p className="myProjects-projectsGrid_description">
-                this group of  projects to give an idea about my level as a web developer 
+            <p className="myProjects-projectsGrid_description hideme">
+               I have chosen various projects so they show my knowledge in various areas 
               </p>
             <Card yourClass="card0" cardStyle={{height:'23.5vh',width:'23.5vw',marginRight:"1.5vh"}}>
             <CardContent

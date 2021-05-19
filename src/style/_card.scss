@@ -1,43 +1,4 @@
-.hero {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-  
-    background: linear-gradient(180deg, #2a3267, #1e282f 100%);
-  }
-  
-  .hero-body {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    padding: 3rem 1.5rem;
-  
-    @media screen and (min-width: 980px) {
-      padding: 8rem 1.5rem;
-    }
-  }
-  
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .column {
-    display: flex;
-    flex: 1 1 auto;
-    padding: 10px;
-    width: 100%;
-    @media screen and (min-width: 980px) {
-      width: 33.33333333333333%;
-    }
-  }
+
   
   .card {
     display: grid;
@@ -53,70 +14,52 @@
     width: 20vw;
     height: 20vh ;
     border-radius: 10px;
+    &-title {
+      cursor: default;
+      color: white !important;
+      font-size: 22px;
+      font-weight: 600;
 
-  }
-  
-  .card-title {
-    cursor: default;
-    color: white !important;
-    font-size: 1.2vw;
-    font-weight: 600;
-
-    // cursor: default ;
-    // color: white !important;
-    // font-size: 22px;
-    // font-weight: 600;
-  }
-  
-  .card-body {
-    cursor: default;
-    color: white !important;
-    margin-top: 27px;
-    margin-bottom: 27px;
-    line-height: 1.5;
-    font-size: .9vw !important;
-    // cursor: default ;
-    // color: white !important;
-    // margin-top: 27px;
-    // margin-bottom: 27px;
-    // line-height: 1.5;
-    // font-size: 16px;
-    
-    @media screen and (min-width: 576px) {
-      font-size: 18px;
     }
-  }
-  .card-info{
     
-    display: grid;
-    grid-template-rows:1fr 5fr 1fr ;
-    height: inherit;
-  }
-  .card-tail {
-    a{
-    color: white !important;}
+    &-body {
+      cursor: default;
+      color: white !important;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+      font-size: 16px ;
 
-    display: flex;
-    margin-top: 27px;
-    margin-bottom: 27px;
-    position: absolute;
-    line-height: 1.5;
-    font-size: 1.1vw;
-    bottom: 0vh;
-    left: 2vw;
-    // display: flex;
-    // margin-top: 27px;
-    // margin-bottom: 27px;
-    // line-height: 1.5;
-    // font-size: 16px;
-    @media screen and (min-width: 576px) {
-      font-size: 18px;
+     
     }
-    a{
+    &-info{
+      
+      display: grid;
+      grid-template-rows:1fr 5fr 1fr ;
+      height: inherit;
+    }
+    &-tail {
+      a{
+      color: white !important;
       text-decoration: none;
       margin-left: 10px;
+      }
+  
+      display: flex;
+      margin-top: 27px;
+      margin-bottom: 27px;
+      position: absolute;
+      line-height: 1.5;
+      font-size: 1.1vw;
+      bottom: 0vh;
+      left: 2vw;
+      
+     
     }
+
   }
+  
+  
   
   .image-container {
     margin-top: auto;

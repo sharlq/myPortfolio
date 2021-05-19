@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   overflow: overlay;
@@ -117,6 +121,7 @@ path {
 }
 
 a {
+  text-decoration: none;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
@@ -126,9 +131,20 @@ a:hover {
   color: black;
 }
 
+.resume {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #007eff;
+  color: white !important;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.resume:hover {
+  background-color: #3f9af7;
+}
+
 .myProjects {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  height: 145vh;
   margin-top: 7vh;
 }
 
@@ -203,73 +219,6 @@ a:hover {
   margin: 2vh auto;
 }
 
-.hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background: -webkit-gradient(linear, left top, left bottom, from(#2a3267), to(#1e282f));
-  background: linear-gradient(180deg, #2a3267, #1e282f 100%);
-}
-
-.hero-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  padding: 3rem 1.5rem;
-}
-
-@media screen and (min-width: 980px) {
-  .hero-body {
-    padding: 8rem 1.5rem;
-  }
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  padding: 10px;
-  width: 100%;
-}
-
-@media screen and (min-width: 980px) {
-  .column {
-    width: 33.33333333333333%;
-  }
-}
-
 .card, .mySkills-grid .skills, .toLearn-card {
   display: -ms-grid;
   display: grid;
@@ -293,23 +242,17 @@ a:hover {
 .card-title {
   cursor: default;
   color: white !important;
-  font-size: 1.2vw;
+  font-size: 22px;
   font-weight: 600;
 }
 
 .card-body {
   cursor: default;
   color: white !important;
-  margin-top: 27px;
-  margin-bottom: 27px;
-  line-height: 1.5;
-  font-size: .9vw !important;
-}
-
-@media screen and (min-width: 576px) {
-  .card-body {
-    font-size: 18px;
-  }
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-size: 16px;
 }
 
 .card-info {
@@ -335,15 +278,6 @@ a:hover {
 
 .card-tail a {
   color: white !important;
-}
-
-@media screen and (min-width: 576px) {
-  .card-tail {
-    font-size: 18px;
-  }
-}
-
-.card-tail a {
   text-decoration: none;
   margin-left: 10px;
 }
@@ -417,7 +351,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25vw;
+  width: 480px;
   height: auto;
   background: #3a3c70;
   -webkit-box-shadow: none;
@@ -430,7 +364,7 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 0 auto;
-  font-size: 1.2vw;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -440,17 +374,16 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 2vh auto 0  0;
-  font-size: 1vw;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .mySkills-grid .skills-list {
-  font-size: 1vw;
   list-style-type: none;
 }
 
 .mySkills-grid .skills-list li {
-  font-size: .9vw;
+  font-size: 16px;
   color: white;
   text-indent: -5px;
   margin-top: 5px;
@@ -480,7 +413,8 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50vw;
+  width: 950px;
+  padding-bottom: 60px;
   background: #efa182;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -492,7 +426,7 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 0 auto;
-  font-size: 1.2vw;
+  font-size: 22px;
   font-weight: 600;
 }
 
@@ -502,7 +436,7 @@ a:hover {
 }
 
 .toLearn-card_list li {
-  font-size: .9vw;
+  font-size: 16px;
   color: white;
   text-indent: -5px;
   margin-top: 5px;
@@ -539,8 +473,14 @@ a:hover {
   color: white;
 }
 
+.aboutMe p {
+  margin-left: 1vw;
+  color: white;
+  font-size: 22px;
+}
+
 .icon {
-  font-size: 3vw !important;
+  font-size: 75px !important;
 }
 
 path {
@@ -568,15 +508,9 @@ path {
           align-items: center;
 }
 
-p {
-  margin-left: 1vw;
-  color: white;
-  font-size: 1vw;
-}
-
 .contactMe {
   background: #221e41;
-  width: 98%;
+  width: 95%;
   border-top-right-radius: 100px;
   height: 40vh;
   margin-top: 10vh;
@@ -605,8 +539,464 @@ p {
 }
 
 .card2 {
-  width: 500px !important;
+  width: 475px !important;
   height: 225px !important;
+}
+
+@media (max-width: 1360px) {
+  /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
+  .navBar {
+    width: 80vw;
+  }
+  /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
+  /* Individuald cards Individuald Cards Individuald Cards Individuald Cards Individuald Cards  */
+  .card0 {
+    width: 33.5vw !important;
+    height: 15vw !important;
+  }
+  .card1 {
+    width: 32vw !important;
+    height: 14vw !important;
+  }
+  .card2 {
+    width: 35vw !important;
+    height: 17vw !important;
+  }
+  /* Individuald Cards Individuald Cards Individuald Cards Individuald Cards Individuald Cards */
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  .card-title {
+    font-size: 1.8vw;
+    font-weight: 600;
+  }
+  .card-body {
+    font-size: 1.3vw;
+  }
+  .card-tail {
+    font-size: 1.1vw;
+  }
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  /*myProjects myProjects myProjects myProjects myProjects */
+  .myProjects-projectsGrid_title {
+    color: black;
+    font-size: 4vw;
+    font-weight: 800;
+  }
+  .myProjects-projectsGrid_description {
+    width: 35vw;
+    color: black;
+    font-size: 2.5vw;
+  }
+  /*myProjects myProjects myProjects myProjects myProjects */
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  .mySkills {
+    width: 90vw;
+  }
+  .mySkills-grid .skills {
+    width: 35vw;
+    height: auto;
+  }
+  .mySkills-grid .skills-title {
+    font-size: 2.5vw;
+  }
+  .mySkills-grid .skills-secondaryTitle {
+    font-size: 1.8vw;
+  }
+  .mySkills-grid .skills-list {
+    list-style-type: none;
+  }
+  .mySkills-grid .skills-list li {
+    font-size: 1.4vw;
+  }
+  .toLearn-card {
+    width: 800px;
+  }
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  /*Footer  Footer  Footer  Footer  Footer */
+  .aboutMe-content {
+    width: 80vw;
+    margin: auto;
+  }
+  .aboutMe-content_title {
+    font-size: 5vw;
+  }
+  .aboutMe-content_text {
+    font-size: 2.5px;
+  }
+  .contactMe-content {
+    width: 80vw;
+    margin: auto;
+  }
+  .contactMe-content_title {
+    font-size: 5vw;
+  }
+  /*Footer  Footer  Footer  Footer  Footer */
+}
+
+@media (max-width: 1000px) {
+  /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
+  .navBar {
+    width: 80vw;
+  }
+  .navBar-list {
+    width: 400px;
+  }
+  .navBar-list_name {
+    font-size: 2.5vw !important;
+  }
+  .navBar .resume {
+    padding: 10px;
+  }
+  .navBar a {
+    font-size: 1.6vw;
+  }
+  /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  .card-title {
+    font-size: 1.8vw;
+    font-weight: 600;
+  }
+  .card-body {
+    font-size: 1.6vw;
+    margin-top: 5px;
+    line-height: 1;
+  }
+  .card-tail a {
+    font-size: 1.8vw;
+  }
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  /*myProjects myProjects myProjects myProjects myProjects */
+  .myProjects-projectsGrid_title {
+    color: black;
+    font-size: 4vw;
+    font-weight: 800;
+  }
+  .myProjects-projectsGrid_description {
+    width: 35vw;
+    color: black;
+    font-size: 2.5vw;
+  }
+  /*myProjects myProjects myProjects myProjects myProjects */
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  .mySkills {
+    width: 90vw;
+  }
+  .mySkills-grid .skills {
+    width: 35vw;
+    height: auto;
+    padding: 30px;
+  }
+  .mySkills-grid .skills-title {
+    font-size: 2.5vw;
+  }
+  .mySkills-grid .skills-secondaryTitle {
+    font-size: 2.1vw;
+  }
+  .mySkills-grid .skills-list {
+    list-style-type: none;
+  }
+  .mySkills-grid .skills-list li {
+    font-size: 1.8vw;
+  }
+  .toLearn-card {
+    width: 80%;
+  }
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  /*Footer  Footer  Footer  Footer  Footer */
+  .aboutMe-content {
+    width: 80vw;
+    margin: auto;
+  }
+  .aboutMe-content_title {
+    padding-top: 7.5vh;
+    font-size: 4.5vw;
+    color: white;
+  }
+  .aboutMe-content_text {
+    font-size: 2px;
+  }
+  .aboutMe p {
+    margin-left: 1vw;
+    color: white;
+    font-size: 2vw;
+  }
+  .icon {
+    font-size: 6vw !important;
+  }
+  .contactMe-content_title {
+    font-size: 4.5vw;
+  }
+  /*Footer  Footer  Footer  Footer  Footer */
+}
+
+@media (max-width: 750px) {
+  /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
+  .navBar {
+    width: 80vw;
+  }
+  .navBar-list {
+    width: 400px;
+  }
+  .navBar-list_name {
+    font-size: 2.5vw !important;
+  }
+  .navBar .resume {
+    padding: 10px;
+  }
+  .navBar a {
+    font-size: 1.6vw;
+  }
+  /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
+  /* INTRO INTRO INTRO*/
+  .scaling-svg-container {
+    padding-bottom: 30px;
+  }
+  .scaling-svg2 {
+    width: 215px;
+    margin-left: 40px;
+  }
+  /* Individuald cards Individuald Cards Individuald Cards Individuald Cards Individuald Cards  */
+  .card0 {
+    width: 80vw !important;
+    height: 40vw !important;
+  }
+  .card1 {
+    width: 80vw !important;
+    height: 40vw !important;
+  }
+  .card2 {
+    width: 80vw !important;
+    height: 40vw !important;
+  }
+  /* Individuald Cards Individuald Cards Individuald Cards Individuald Cards Individuald Cards */
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  .card, .mySkills-grid .skills, .toLearn-card {
+    padding: 20px;
+    margin-top: 5vh;
+  }
+  .card-title {
+    font-size: 3.8vw;
+    font-weight: 600;
+  }
+  .card-body {
+    font-size: 3vw;
+    margin-top: 5px;
+    line-height: 1;
+  }
+  .card-tail a {
+    font-size: 3.2vw;
+  }
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  /*myProjects myProjects myProjects myProjects myProjects */
+  .myProjects-projectsGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+  }
+  .myProjects-projectsGrid_title {
+    color: black;
+    font-size: 10vw;
+    font-weight: 800;
+  }
+  .myProjects-projectsGrid_description {
+    width: 80vw;
+    color: black;
+    font-size: 5vw;
+  }
+  .myProjects .hideme {
+    display: none;
+  }
+  /*myProjects myProjects myProjects myProjects myProjects */
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  .mySkills {
+    width: 90vw;
+  }
+  .mySkills-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .mySkills-grid .skills {
+    width: 80vw;
+    height: auto;
+    padding: 5vw;
+  }
+  .mySkills-grid .skills-title {
+    font-size: 3.5vw;
+  }
+  .mySkills-grid .skills-secondaryTitle {
+    font-size: 3.1vw;
+  }
+  .mySkills-grid .skills-list {
+    list-style-type: none;
+  }
+  .mySkills-grid .skills-list li {
+    font-size: 2.5vw;
+  }
+  .toLearn-card {
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  /*Footer  Footer  Footer  Footer  Footer */
+  .aboutMe-content {
+    width: 80vw;
+    margin: auto;
+  }
+  .aboutMe-content_title {
+    padding-top: 7.5vh;
+    font-size: 4.5vw;
+    color: white;
+  }
+  .aboutMe-content_text {
+    font-size: 2px;
+  }
+  .aboutMe p {
+    margin-left: 1vw;
+    color: white;
+    font-size: 2vw;
+  }
+  .icon {
+    font-size: 9vw !important;
+  }
+  .contactMe-content .contacts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    justify-items: center;
+    gap: 20px;
+  }
+  .contactMe-content_title {
+    font-size: 4.5vw;
+  }
+  .contactMe .email {
+    font-size: 2vw;
+  }
+  /*Footer  Footer  Footer  Footer  Footer */
+}
+
+@media (max-width: 400px) {
+  .navBar-list {
+    display: none;
+  }
+  .navBar .resume {
+    font-size: 5vw;
+  }
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  .card, .mySkills-grid .skills, .toLearn-card {
+    padding: 20px;
+    margin-top: 5vh;
+  }
+  .card-title {
+    font-size: 3.8vw;
+    font-weight: 600;
+  }
+  .card-body {
+    font-size: 3vw;
+    margin-top: 5px;
+    line-height: 1;
+  }
+  .card-tail a {
+    font-size: 3.2vw;
+  }
+  /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
+  /*myProjects myProjects myProjects myProjects myProjects */
+  .myProjects-projectsGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[8];
+        grid-template-rows: repeat(8, 1fr);
+  }
+  .myProjects-projectsGrid_title {
+    color: black;
+    font-size: 10vw;
+    font-weight: 800;
+  }
+  .myProjects-projectsGrid_description {
+    width: 80vw;
+    color: black;
+    font-size: 5vw;
+  }
+  .myProjects .hideme {
+    display: none;
+  }
+  /*myProjects myProjects myProjects myProjects myProjects */
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  .mySkills {
+    width: 90vw;
+  }
+  .mySkills-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .mySkills-grid .skills {
+    width: 80vw;
+    height: auto;
+    padding: 5vw;
+  }
+  .mySkills-grid .skills-title {
+    font-size: 6vw;
+  }
+  .mySkills-grid .skills-secondaryTitle {
+    font-size: 5vw;
+  }
+  .mySkills-grid .skills-list {
+    list-style-type: none;
+  }
+  .mySkills-grid .skills-list li {
+    font-size: 4vw;
+  }
+  .toLearn-card {
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .toLearn-card_title {
+    font-size: 6vw;
+  }
+  .toLearn-card_list li {
+    font-size: 4vw;
+  }
+  /*mySkills mySkills mySkills mySkills mySkills mySkills */
+  /*Footer  Footer  Footer  Footer  Footer */
+  .aboutMe-content {
+    width: 80vw;
+    margin: auto;
+  }
+  .aboutMe-content_title {
+    padding-top: 7.5vh;
+    font-size: 6vw;
+    color: white;
+  }
+  .aboutMe-content_text {
+    font-size: 2px;
+  }
+  .aboutMe p {
+    margin-left: 1vw;
+    color: white;
+    font-size: 4vw;
+  }
+  .icon {
+    font-size: 11vw !important;
+  }
+  .contactMe-content .contacts {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    justify-items: center;
+    gap: 20px;
+  }
+  .contactMe-content_title {
+    font-size: 6vw;
+  }
+  .contactMe .email p {
+    font-size: 2.5vw;
+  }
+  /*Footer  Footer  Footer  Footer  Footer */
 }
 
 .app {
