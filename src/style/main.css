@@ -11,7 +11,7 @@ body {
   font-size: 16px;
   margin: 0;
   font-family: -apple-system, Roboto, BlinkMacSystemFont, 'Segoe UI',  Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #707070;
+  color: #585858;
 }
 
 #root {
@@ -415,9 +415,12 @@ a:hover {
           flex-direction: column;
   width: 950px;
   padding-bottom: 60px;
-  background: #efa182;
+  background: #16426f;
   -webkit-box-shadow: none;
           box-shadow: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .toLearn-card_title {
@@ -647,7 +650,7 @@ path {
     padding: 10px;
   }
   .navBar a {
-    font-size: 1.6vw;
+    font-size: 10px;
   }
   /*NavBar  NavBar  NavBar  NavBar   NavBar  NavBar    */
   /* Card Card Card Card Card Card Card Card Card Card Card Card Card */
@@ -734,7 +737,7 @@ path {
     width: 80vw;
   }
   .navBar-list {
-    width: 400px;
+    width: 55vw;
   }
   .navBar-list_name {
     font-size: 2.5vw !important;
@@ -1001,5 +1004,15 @@ path {
 
 .app {
   margin: auto;
+}
+
+.loading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50vh;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 5vh;
 }
 /*# sourceMappingURL=main.css.map */

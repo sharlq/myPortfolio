@@ -1,7 +1,6 @@
-import React,{useRef} from 'react'
+import React from 'react'
 
 const MySkills = () => {
-    const cardRef = useRef({})
 
     return (
         <>
