@@ -9,9 +9,10 @@ const NavBar = () => {
                 <a href="#mySkills">My Skills</a>
                 <a href="#aboutMe">About Me</a>
                 <a href="#contactMe">Contact Me</a>
+                <a herf="https://github.com/sharlq/myPortfolio">Portfolio Code</a>
             </div>
                 
-                <a className="resume">Resume</a>
+                <a href="https://drive.google.com/file/d/1jQzkceRw9X5LnxMNyGa1OYdULWNn4Ugd/view?usp=sharing" className="resume">Resume</a>
         </div>
     )
 }
