@@ -415,9 +415,12 @@ a:hover {
           flex-direction: column;
   width: 950px;
   padding-bottom: 60px;
-  background: #efa182;
+  background: #16426f;
   -webkit-box-shadow: none;
           box-shadow: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .toLearn-card_title {
@@ -1001,5 +1004,15 @@ path {
 
 .app {
   margin: auto;
+}
+
+.loading {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50vh;
+  font-size: 50px;
+  margin: auto;
+  margin-top: 5vh;
 }
 /*# sourceMappingURL=main.css.map */

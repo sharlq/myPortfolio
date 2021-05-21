@@ -10,7 +10,7 @@ function Image({ ratio, src ,link}) {
           >
             <div className="ratio-inner">
               <a href={link}>
-                 <img src={src} />
+                 <img src={src} alt="site"/>
               </a>
             </div>
           </div>

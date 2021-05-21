@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import ReactDOM from 'react-dom';
 import { useSpring, animated } from 'react-spring';
 
 
@@ -56,18 +55,18 @@ function Card({ children,cardStyle={},yourClass=""}) {
           ];
   
           // Update values to animate to
-          setAnimatedProps({ xys: xys });
+          setAnimatedProps.start({ xys: xys });
         }}
         onMouseLeave={() => {
           setHovered(false);
           // Set xys back to original
-          setAnimatedProps({ xys: [0, 0, 1] });
+          setAnimatedProps.start({ xys: [0, 0, 1] });
         }}
         style={{...{
           // If hovered we want it to overlap other cards when it scales up
           zIndex: isHovered ? 2 : 1,
           // Interpolate function to handle css changes
-          transform: animatedProps.xys.interpolate(
+          transform: animatedProps.xys.to(
             (x, y, s) =>
               `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
           )

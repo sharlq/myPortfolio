@@ -1,6 +1,6 @@
+
 import React from 'react'
 import Card from './Card'
-import Image from './Image'
 import card from './cardsData'
 import CardContent from './CardContent'
 const Myprojects = () => {
