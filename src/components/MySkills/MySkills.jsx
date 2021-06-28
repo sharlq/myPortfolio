@@ -14,13 +14,16 @@ const MySkills = () => {
                     <ul className="skills-list">
                         <li>Strong Knowledge in the HTML5, CSS3, JavaScrpt and EcmaScript</li>
                         <li>Experience with REACT</li>
+                        <li>React workflow eg: Redux , React-router , NextJS</li>
                         <li>experiance with SASS</li>
+                        <li>knowlage of Typescript</li>
                         <li>BootStrap and Material UI</li>
                         <li>Knowledge of webStructure and browser performance</li>
                         <li>Familiarity with software  version control system Git,Github</li>
                         <li>Familiarity with the whole web stack</li>
                         <li>knowladge of NodeJS and express</li>
                         <li>Knowledge of bundling tools webpack,roll up and parcel</li>
+                        <li>knowlage of MERN stack mongodb,NodeJS and Express , able to create CRUD APIs and user authentication using httpOnly cookies and JWT</li>
                         <li>UI/UX basics</li>
                     </ul>
                     <h2 className="skills-secondaryTitle">Other Programming skills</h2>
@@ -60,7 +63,6 @@ const MySkills = () => {
             <div className="toLearn-card">
                 <h1 className="toLearn-card_title">Things Iam planning to learn</h1>
                 <ul className="toLearn-card_list" >
-                        <li>TypeScript</li>
                         <li>React Native</li>
                         <li>to master firebase</li>
                         <li>to learn Fullstack development</li>
