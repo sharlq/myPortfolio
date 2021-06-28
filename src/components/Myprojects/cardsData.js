@@ -38,13 +38,13 @@ const  cards =[
     }
     ,
     {
-      title: 'User Authentication',
+      title: 'discord clone',
       description:
-        'crated user Authentication using firebase',
-      image: 'https://www.mediafire.com/convkey/3cf0/6ghz634108vxb0nzg.jpg',
+        'crated discord using firebase',
+      image: 'https://www.mediafire.com/convkey/549b/9ejzmfrzjgekfy1zg.jpg',
       imageRatio:  1080/1920,
-      preview:'https://firebase-user-auth.netlify.app/login',
-      github:'https://github.com/sharlq/ReactAuthentication'
+      preview:'https://discord-clone-135a2.web.app',
+      github:'https://github.com/sharlq/discord_clone'
     }
     ,
     {

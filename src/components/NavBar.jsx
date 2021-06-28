@@ -12,7 +12,7 @@ const NavBar = () => {
                 <a href="https://github.com/sharlq/myPortfolio">Portfolio Code</a>
             </div>
                 
-                <a href="https://drive.google.com/file/d/1jQzkceRw9X5LnxMNyGa1OYdULWNn4Ugd/view?usp=sharing" className="resume">Resume</a>
+                <a href="https://drive.google.com/drive/u/0/folders/1KuCAOrxlp1TcZH_GLcLBf_oP4XRiCRk0" className="resume">Resume</a>
         </div>
     )
 }
